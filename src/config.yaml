@@ -1,5 +1,5 @@
 site:
-  name: AstroWind
+  name: Zetta Analytics
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Zetta Analytics
+    template: '%s — Zetta Analytics'
+  description: "\U0001F680 Zetta Analytics is an analytics consulting company specializing in providing data engineering, data analytics, data visualization, ETL, AI/ML service offerings to clients. Our mission is to help organizations harness the power of data to make informed decisions and drive business growth. With a team of experienced data scientists, engineers, and analysts, we provide end-to-end solutions tailored to the unique needs of our clients."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Zetta Analytics
     images:
       - url: '~/assets/images/default.png'
         width: 1200

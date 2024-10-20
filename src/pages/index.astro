@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Zetta Analytics',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,28 +25,29 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
+        text: 'Contact Us',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
-        icon: 'tabler:download',
+        // icon: 'tabler:download',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Know more', href: '#features' },
     ]}
     image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      Data is the oil,<span class="hidden xl:inline"></span><br>
+      <span class="text-accent dark:text-white highlight">AI & Analytics is the combustion engine</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
+        <span class="font-semibold">Zetta Analytics </span> 
+        is an analytics consulting company specializing in providing data engineering, data analytics, data visualization, ETL, AI/ML service offerings to clients.
+        </span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
+      <!-- <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
       Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      Blogs. -->
     </Fragment>
   </Hero>
 
@@ -58,39 +59,39 @@ const metadata = {
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    tagline="Services"
+    title="What you get with Zetta"
+    subtitle="We empower your organization to make informed decisions, innovate continuously, and enhance customer experiences by leveraging our comprehensive expertise in data, AI and analytics. Together, we can unlock your business's full potential!"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Strategic Data Consulting',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+          'Data-driven consultations can helps you guide through the complex landscape of analytics strategy and implementation.',
         icon: 'tabler:brand-tailwind',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Generative AI Solutions',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          'Harness the power of Generative AI to craft tailor-made content solutions, addressing business needs and challenges, and generate innovative, personalized outcomes that maximize opportunities.',
         icon: 'tabler:components',
       },
       {
-        title: 'Best Practices',
+        title: 'Advanced Analytics',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Our tech-enabled advanced analytics helps turn information into connected intelligent insights.',
+        icon: 'tabler:chart-arcs-3',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Custom Data Driven Strategies',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'Craft bespoke analytics solutions to address your unique challenges and opportunities. Create personalized recommendations by addressing needs before they become problems.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Business Intelligence',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          "Transform raw data into impactful insights to drive strategic decision-making across your entire organization.",
+        icon: 'tabler:presentation-analytics',
       },
       {
         title: 'Open to new ideas and contributions',
@@ -105,23 +106,23 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Solutions"
+    title="Your Business Challenges"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'Client centric',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Help the clients become intelligent, information-driven, where fact-based decision-making is embedded into daily operations from the boardroom to the front line, which ultimately leads to better processes and outcomes.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Tech Driven',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Offer comprehensive end-to-end analytics services, encompassing data collection, data engineering, data integration, data science, real-time analytics, business intelligence with robust data security, governance, and compliance.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Startegic Leverage',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Structure your processes and systems in a way that makes data a strategic asset aligning with the organization’s critical streams.',
       },
     ]}
     image={{
@@ -130,8 +131,8 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <!-- <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3> -->
+      Companies don’t have analytics problems; they have business problems that analytics can address. Our team aims to :
     </Fragment>
 
     <Fragment slot="bg">
@@ -142,26 +143,28 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
-    isAfterContent
+  tagline="We are here"
+  title="Why Our Team"
+  isAfterContent
     items={[
       {
         title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        description: `We bring extensive industry knowledge, cutting-edge technology, and a client-centric approach to the table`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Tailored, scalable solutions',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+        'Craft bespoke analytics solutions to address your unique challenges and opportunities.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Collaborative',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          "We distinguish ourselves by our collaborative approach, ongoing innovation, and cost-effectiveness",
       },
       {
-        title: 'Integration of media',
+        title: 'Data Protection',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Prioritising data protection and achieve measurable benefits',
       },
     ]}
     image={{
@@ -169,7 +172,7 @@ const metadata = {
       alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">Our team provides data and analytics services with customized analysis, visualization and reporting capabilities.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -178,7 +181,7 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isReversed
     isAfterContent
     items={[
@@ -212,33 +215,83 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Roles"
+    subtitle="Provides end-to-end team for your needs."
+    tagline="Personas"
+    items={[
+      {
+        title: 'Business Analyst',
+        description:
+          "Gather and document business requirements ▪ Translate requirements into technical specifications ▪ Develop business use cases and cost-benefit analyses ▪ Support the implementation and testing phases",
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Data Analyst',
+        description: "Collect, organize, and analyse large sets of data ▪ Develop and implement data models ▪ Manage RDBMS / DDL / DML ▪ Collaborate with cross-functional teams to understand requirements",
+        icon: 'flat-color-icons:voice-presentation',
+      },
+      {
+        title: 'Business Intelligence Engineer',
+        description:
+          'Create analytics dashboard and reports ▪ BI Data modelling ▪ Data Transformation and data wrangling ▪ Cross-Functional Collaboration',
+        icon: 'flat-color-icons:advertising',
+      },
+      {
+        title: 'Data Engineer',
+        description:
+          "Data Pipeline Development ▪ Data Integration & Data Storage ▪ ETL (Extract, Transform & Load) ▪ Data Cleaning and Pre-processing ▪ Database architecture creation",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Data Scientist',
+        description:
+          'Develop predictive and machine learning models ▪ Explore and analyse large datasets ▪ Extract valuable insights from data ▪ Provide Statistical Inference',
+        icon: 'flat-color-icons:business-contact',
+      },
+      {
+        title: 'AI Engineer',
+        description: 'Develop and implement AI models and algorithms ▪ Apply machine learning and deep learning pre-process ▪ Analyse data for AI model training ▪ Optimize AI models for performance and efficiency',
+        icon: 'flat-color-icons:approval',
+      }
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Get started today with Zetta"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Contact Us</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "Fill out the contact form, book a calendar and schedule a meeting with our team.",
+        icon: 'tabler:phone',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Get a consulation</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          "Get on call with team to know the feasibility of your project idea.",
+        icon: 'tabler:list-check',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Get a Estimate</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'Based on the project requirements, we share a project proposal with budget and timeline estimates.',
+        icon: 'tabler:contract',
       },
       {
-        title: 'Ready!',
+        title: 'Ready! Project Kickoff',
+        description:
+          'Once the project is signed, we bring together a team from a range of disciples to kick start your project.',
         icon: 'tabler:check',
       },
     ]}
@@ -248,69 +301,6 @@ const metadata = {
     }}
   />
 
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
-    items={[
-      {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
 
   <!-- HighlightedPosts Widget ******* -->
 
@@ -380,20 +370,20 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
+        text: 'Contact Us',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
-        icon: 'tabler:download',
+        // icon: 'tabler:download',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+    Get Started<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Unlock the full potential of our Analytics Service offerings through a live demo.<br class="hidden md:inline" />
+      Contact us to explore how we can elevate your business and turn your aspirations into tangible outcomes.
     </Fragment>
   </CallToAction>
 </Layout>
