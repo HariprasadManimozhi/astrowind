@@ -1,0 +1,225 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import { getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: 'Case Studies',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="porfolio"
+    title="Transforming Data into Actionable Insights"
+      subtitle="Discover how our solutions drive innovation and empower businesses to make informed decisions."
+    isReversed
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Implemented a predictive maintenance solution for a leading manufacturing company. By analyzing equipment data, we identified patterns and predicted potential failures, allowing for timely maintenance and reducing downtime.',
+      },
+      {
+        title: 'Role:',
+        description:
+          'Led the data analysis and machine learning model development. Integrated the solution with the clients existing systems, providing real-time alerts and actionable insights.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
+      alt: 'Tech Design Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: '#',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Case Study 1: <br /><span class="text-2xl">Predictive Maintenance for Manufacturing</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Developed a comprehensive customer behavior analytics platform for a major retail chain. The solution enabled the client to understand purchasing patterns, optimize inventory, and enhance customer experience.',
+      },
+      {
+        title: 'Role:',
+        description: 'Oversaw the data collection and processing. Created advanced analytics dashboards that visualized key metrics and trends, facilitating data-driven decision-making.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Art and Music Poster Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: '#',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Case Study 2: <br /><span class="text-2xl">Customer Behavior Analytics for Retail</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description: `Designed a fraud detection system for a financial services provider. Leveraging AI and machine learning, the system identified suspicious activities and prevented fraudulent transactions, ensuring customer trust and security.`,
+      },
+      {
+        title: 'Role:',
+        description: `Managed the end-to-end development of the fraud detection algorithm. Implemented real-time monitoring and alerting mechanisms, significantly reducing the occurrence of fraud.`,
+      },
+    ]}
+    image={{
+      src: 'https://plus.unsplash.com/premium_photo-1683288295841-782fa47e4770?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Fashion e-commerce Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: '#',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Case Study 3: <br /><span class="text-2xl">Fraud Detection for Financial Services</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Testimonials Widget *********** -->
+
+  <!-- <Testimonials
+    title="Client testimonials"
+    subtitle="Discover what clients have to say about their experiences working with me."
+    testimonials={[
+      {
+        testimonial: `She took our vague concept and turned it into a visual masterpiece that perfectly aligned with our goals. Her attention to detail and ability to translate ideas into compelling visuals exceeded our expectations.`,
+        name: 'Mark Thompson',
+        job: 'Creative director',
+        image: {
+          src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Mark Thompson Image',
+        },
+      },
+      {
+        testimonial: `She transformed our brand identity with her creative finesse, capturing our essence in every element. Her dedication and talent truly shine through her work.`,
+        name: 'Emily Martinez',
+        job: 'CEO',
+        image: {
+          src: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80',
+          alt: 'Emily Martinez Image',
+        },
+      },
+      {
+        testimonial: `She has an uncanny ability to communicate emotions and stories. She crafted a logo for our NGO that not only represents our cause but also evokes empathy. Her professionalism and commitment make her a designer of exceptional caliber.`,
+        name: 'Laura Simmons',
+        job: 'Founder of an NGO',
+        image: {
+          src: 'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Laura Simmons Image',
+        },
+      },
+      {
+        testimonial: `We entrusted Sarah with revamping our website's user interface, and the results were astounding. Her intuitive design sense enhanced user experience, leading to a significant increase in engagement. She's a designer who truly understands the synergy of aesthetics and functionality.`,
+        name: 'Alex Foster',
+        job: 'Director of web services',
+        image: {
+          src: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Alex Foster Image',
+        },
+      },
+      {
+        testimonial: `She took our vision and elevated it beyond imagination. Her ability to capture brand essence and translate it into design is nothing short of remarkable. Working with her has been an inspiring journey.`,
+        name: 'Jessica Collins',
+        job: 'Product Manager',
+        image: {
+          src: 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80',
+          alt: 'Jessica Collins Image',
+        },
+      },
+      {
+        testimonial: `Her ability to transform concepts into captivating visuals is nothing short of extraordinary. She took our event poster idea and turned it into a visual masterpiece that perfectly captured the essence of our festival. Sarah's dedication, creativity, and knack for delivering beyond expectations make her an invaluable asset to any project.`,
+        name: 'Michael Carter',
+        job: 'Event Coordinator',
+        image: {
+          src: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Michael Carter Image',
+        },
+      },
+    ]}
+  /> -->
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Let's create together"
+    subtitle="Ready to transform your vision into  reality?"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Connect with us',
+        href: '/contact',
+      },
+    ]}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <!-- <BlogLatestPosts
+    id="blog"
+    title="Explore my insightful articles on my blog"
+    information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
+  > -->
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>

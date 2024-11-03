@@ -1,0 +1,108 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Capabilities',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Capabilities"
+    title="Elevate your projects with our capabilties and services"
+    subtitle="Explore our meticulously tailored servives to various industries. From researching to analyzing your problems , we offer the solutions you need to succeed."
+    actions={[{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }]}
+    image={{
+      src: '~/assets/images/zetta/maturity_analytics.png',
+      alt: 'AstroWind Hero Image',
+    }}
+  />
+
+  <Features2
+    title="Roles"
+    subtitle="Provides end-to-end team for your needs."
+    tagline="Personas"
+    items={[
+      {
+        title: 'Business Analyst',
+        description:
+          "Gather and document business requirements ▪ Translate requirements into technical specifications ▪ Develop business use cases and cost-benefit analyses ▪ Support the implementation and testing phases",
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Data Analyst',
+        description: "Collect, organize, and analyse large sets of data ▪ Develop and implement data models ▪ Manage RDBMS / DDL / DML ▪ Collaborate with cross-functional teams to understand requirements",
+        icon: 'flat-color-icons:voice-presentation',
+      },
+      {
+        title: 'Business Intelligence Engineer',
+        description:
+          'Create analytics dashboard and reports ▪ BI Data modelling ▪ Data Transformation and data wrangling ▪ Cross-Functional Collaboration',
+        icon: 'flat-color-icons:advertising',
+      },
+      {
+        title: 'Data Engineer',
+        description:
+          "Data Pipeline Development ▪ Data Integration & Data Storage ▪ ETL (Extract, Transform & Load) ▪ Data Cleaning and Pre-processing ▪ Database architecture creation",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Data Scientist',
+        description:
+          'Develop predictive and machine learning models ▪ Explore and analyse large datasets ▪ Extract valuable insights from data ▪ Provide Statistical Inference',
+        icon: 'flat-color-icons:business-contact',
+      },
+      {
+        title: 'AI Engineer',
+        description: 'Develop and implement AI models and algorithms ▪ Apply machine learning and deep learning pre-process ▪ Analyse data for AI model training ▪ Optimize AI models for performance and efficiency',
+        icon: 'flat-color-icons:approval',
+      }
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+
+  <!-- Features2 Widget ************** -->
+
+  <Hero
+    title="Explore our value chain"
+    subtitle="Discover our offerings to elevate your projects."
+    image={{
+      src: '~/assets/images/zetta/data_value_chain.png',
+      alt: 'AstroWind Hero Image',
+    }}
+    />
+
+  <Hero
+  title="Our tools"
+    subtitle="Explore our wide range of toolsets to address your need to leverage the data."
+    image={{
+      src: "~/assets/images/zetta/tools.png",
+      alt: 'AstroWind Hero Image',
+    }}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start exploring',
+        href: '/contact',
+      },
+    ]}
+    title="Connect with Us"
+    subtitle="Whether you're unable to leverage value out of your data, we are here to elevate you."
+  />
+</Layout>
